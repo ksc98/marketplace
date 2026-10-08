@@ -1,0 +1,14 @@
+{
+  "name": "ksc98",
+  "owner": {
+    "name": "ksc98"
+  },
+  "description": "ksc98's Claude Code plugins",
+  "plugins": [
+    {
+      "name": "fantasy-draft",
+      "source": "./plugins/fantasy-draft",
+      "description": "Live pick advisor for Yahoo Fantasy Basketball 9-cat drafts: reads the draft room in Chrome and suggests your next pick, with extra NBA data from nba-api.xyz."
+    }
+  ]
+}

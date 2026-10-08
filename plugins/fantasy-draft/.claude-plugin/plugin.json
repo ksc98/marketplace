@@ -1,0 +1,5 @@
+{
+  "name": "fantasy-draft",
+  "description": "Live pick advisor for Yahoo Fantasy Basketball 9-cat drafts: reads the draft room in Chrome and suggests your next pick, with extra NBA data from nba-api.xyz.",
+  "author": { "name": "ksc98" }
+}
