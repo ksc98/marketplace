@@ -23,9 +23,9 @@ The draft is on Yahoo. Yahoo's Fantasy API needs a manual app approval, so the d
 
 ## Every time the user asks (or says "up")
 
-1. **Re-read the board first, every time.** Never suggest from memory: players vanish between turns (a mock suggested Cason Wallace after he was gone). Run the "state" snippet from `scripts/board.js`: the banner (whose pick, picks until the user), the user's roster panel, and the top available players with Rank, ADP and stats. Results over ~2 KB are truncated, so read in slices of ~20 rows.
+1. **Re-read the board first, every time.** Never suggest from memory: players vanish between turns (a mock suggested Cason Wallace after he was gone). Run the "state" snippet from `${CLAUDE_SKILL_DIR}/scripts/board.js`: the banner (whose pick, picks until the user), the user's roster panel, and the top available players with Rank, ADP and stats. Results over ~2 KB are truncated, so read in slices of ~20 rows.
 2. Work out the roster's category profile from their players' projections: which categories are locked, which are close, which are lost or punted, and which roster slots are still empty (PG, SG, G, SF, PF, F, C, C, Util, Util).
-3. Answer fast (the pick clock is 30 s in mocks): **one pick in bold first**, one line of why (categories plus slot), then 2-3 fallbacks in order. When they're "up in N", give an ordered shortlist that survives a few picks.
+3. Answer fast (assume a 60 s pick clock; the banner shows the real countdown, e.g. `00:22`): **one pick in bold first**, one line of why (categories plus slot), then 2-3 fallbacks in order. When they're "up in N", give an ordered shortlist that survives a few picks.
 4. Use names exactly as Yahoo shows them (`D. Peterson`, `C. Wilson`). **Never expand a first name you aren't sure of.** Say "D. Peterson (SG, UTA)".
 5. After their pick, note the roster and the next pick number, and pre-plan the shortlist.
 
